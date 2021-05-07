@@ -5,11 +5,11 @@ import {Provider} from 'react-redux'
 import {ThemeProvider} from 'styled-components/native'
 
 import appData from './app.json'
-import App from './App'
 import {sagaMiddleware} from './src/store/middleware'
 import saga from './src/store/saga'
 import getAppStore from './src/store'
 import theme from './src/styles/theme'
+import App from './src/components/app'
 
 sagaMiddleware.run(saga)
 
